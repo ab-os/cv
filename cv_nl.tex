@@ -1,152 +1,152 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[english]{babel}
 \usepackage[usenames,dvipsnames]{color}
 %\usepackage[compact]{titlesec}
 %\usepackage{fullpage}
 \usepackage[margin=1.2cm]{geometry}
 \usepackage{multicol}
-\usepackage{amsmath}
 \usepackage{fontawesome}
 \usepackage{array}
+\usepackage{hyperref}
+\usepackage{xspace}
 
-% User defined
-\setlength{\columnsep}{30 pt}
+% User definitions
+\setlength{\columnsep}{20 pt}
 \definecolor{DarkBlue}{cmyk}{0.7, 0.7, 0, 0.5}
 \definecolor{DarkGreen}{cmyk}{0.5, 0, 0.5, 0.7}
-\newcommand{\cvsection}[1]{
-  \subsection*{{\color{DarkBlue} \textnormal{\faicon{sticky-note}}~ #1}}
+\newcommand{\cvsection}[2]{
+	\subsection*{{\color{DarkBlue} \textnormal{\faicon{#2}}~ #1}}
 }
 \newcommand{\cvbullet}[1]{
-  \emph{\color{DarkBlue} $\bullet$ #1}
+	\emph{\color{DarkBlue} $\bullet$ #1}
 }
 \newcommand{\fablue}[1]{
-  {\color{DarkBlue} \faicon{#1}}
+	{\color{DarkBlue} \faicon{#1}}
+}
+\newcommand{\secsep}{
+	\vspace{3mm}
+	\hrule
+}
+\newcommand{\myurl}[2]{
+	{\color{blue}\underline{\href{#1}{#2\xspace}\xspace}\xspace}
 }
 \pagestyle{empty}
 
+% Actual content
 \begin{document}
 
 \begin{tabular}{lr}
-  {\color{DarkBlue}\huge {\bf Arjen Bos}} \hspace{17em} &
-  \begin{tabular}{rl}
-    Gounodlaan 9, 5653AX Eindhoven & \fablue{map-marker}\\ 
-    +31 6 15399756 & \fablue{phone}\\
-    \verb~arjen@bos4.nl~ & \fablue{envelope}\\
-    03 jan 1991 & \fablue{birthday-cake}
-  \end{tabular}
+	{\color{DarkBlue}\huge {\bf Arjen Bos}} \hspace{17em} &
+	\begin{tabular}{rl}
+		Gounodlaan 9, 5653AX Eindhoven & \fablue{map-marker}\\ 
+		+31 6 15399756 & \fablue{phone}\\
+		arjen@bos4.nl & \fablue{envelope}\\
+		03 jan 1991 & \fablue{birthday-cake}
+	\end{tabular}
 \end{tabular}
+
 \vspace{1mm}
 \hrule
 
 \begin{multicols}{2}
 
-\subsection*{{\color{DarkBlue} \textnormal{\faicon{user}}~ Persoonlijk profiel}}
-{Proactief $\ast$ Analytisch $\ast$ Oplossingsgericht $\ast$ Direct \unskip\parfillskip 0pt \par}
+	\cvsection{Persoonlijk profiel}{user}
+	{Proactief $\ast$ Analytisch $\ast$ Oplossingsgericht $\ast$ Direct \unskip\parfillskip 0pt \par}
 
-\vspace{3mm}
-\hrule
+	\secsep
+	
+	\cvsection{Opleiding}{sticky-note}
+	\cvbullet{sep 2013 -- mei 2016}\\
+		Biomedical Engineering (MSc) -- Technische Universiteit Eindhoven (TU/e).
+		\emph{Afgestudeerd op:} The development of a novel glucose biosensor based on tethered particle motion.\\
+	\cvbullet{aug 2011 -- feb 2012}\\
+		Erasmus exchange naar Universitat de Barcelona (UB). Vakken over moleculaire biologie and biochemie.\\
+	\cvbullet{sep 2009 -- juli 2013}\\
+		Technische Natuurkunde (BSc) | TU/e.
+		\emph{Eindproject:} Determination of magnetic properties of superparamagnetic microspheres.\\
+	\cvbullet{sep 2003 -- mei 2009}\\
+		Atheneum N\&T + N\&G | Pleincollege Bisschop Bekkers, Eindhoven
 
-\cvsection{Opleiding}
-\cvbullet{sep 2013 -- mei 2016}\\
-Biomedical Engineering (MSc) -- TU Eindhoven (TU/e)
-\emph{Afgestudeerd op:} The development of a novel glucose biosensor based on tethered particle motion.\\
-\cvbullet{aug 2011 -- feb 2012}\\
-Erasmus exchange naar Universitat de Barcelona (UB) Vakken over Molecular Biology and Biochemistry \\
-\cvbullet{sep 2009 -- juli 2013}\\
-Technische Natuurkunde (BSc) | TU/e.
-\emph{Eindproject:} Determination of magnetic properties of superparamagnetic microspheres.\\
-\cvbullet{sep 2003 -- mei 2009}\\
-Atheneum N\&T + N\&G | Pleincollege Bisschop Bekkers, Eindhoven
+	\secsep
 
-\vspace{3mm}
-\hrule
+	\cvsection{Extracurriculaire activiteiten}{sticky-note}
+		\cvbullet{sep 2014 -- mar 2016}\\
+		Raad van advies van ESWZV Nayade. \emph{Taken:} Begeleiding huidig bestuur over o.a. beleid, communicatie en organisatie.\\
+	\cvbullet{sep 2012 -- sep 2013}\\
+		Bestuur van ESWZV Nayade. \emph{Taken:} Verantwoordelijk voor 4 competitieteams en alle recreatieve leden. Wedstrijdplanning van het seizoen. Doorvoeren van verenigingsbeleidveranderingen. Organisatie en begeleiding van sociale en sportieve activiteiten.\\
+	\cvbullet{mar 2012 -- sep 2014} \\
+		Verschillende commissies bij ESWZV Nayade: veelal organisatie van sociale activiteiten en 50\textsuperscript{e} waterpolotoernooi.\\
+	\cvbullet{mar 2010 -- mei 2016} \\
+		Verschillende commissies bij Fysisch dispuut Hawking: veelal organisatie van sociale en sportactiviteiten.\\
+	\cvbullet{mar 2010} \\
+		Oprichter Van--der--Waalsdispuut: Fysisch dispuut Hawking.\\
+	\cvbullet{nov 2009 -- dec 2013} \\
+		Verschillende commissies bij SVTN ``J.D. van der Waals''
 
-\cvsection{Extracurriculaire activiteiten}
-\cvbullet{sep 2014 -- mar 2016}\\
-Raad van advies van ESWZV Nayade. \emph{Taken:} Begeleiding huidig bestuur over o.a. beleid, communicatie en organisatie.\\
-\cvbullet{sep 2012 -- sep 2013}\\
-Bestuur van ESWZV Nayade. \emph{Taken:} Verantwoordelijk voor 4 competitieteams en alle recreatieve leden. Wedstrijdplanning van het seizoen. Doorvoeren van verenigingsbeleidveranderingen. Organisatie en begeleiding van sociale en sportieve activiteiten.\\
-\cvbullet{mar 2012 -- sep 2014} \\
-Verschillende commissies bij ESWZV Nayade: veelal organisatie van sociale activiteiten en 50\textsuperscript{e} waterpolotoernooi.\\
-\cvbullet{mar 2010 -- mei 2016} \\
-Verschillende commissies bij Fysisch dispuut Hawking: veelal organisatie van sociale en sportactiviteiten.\\
-\cvbullet{mar 2010} \\
-Oprichter Van--der--Waalsdispuut: Fysisch dispuut Hawking.\\
-\cvbullet{nov 2009 -- dec 2013} \\
-Verschillende commissies bij SVTN ``J.D. van der Waals''
+	\secsep
 
-\vspace{3mm}
-\hrule
+	\cvsection{Publicaties}{sticky-note}
+	\cvbullet{juli 2013} \\
+		Accurate quantification of magnetic particle properties by intra-pair magnetophoresis for nanobiotechnology | 3$^\mathrm{rd}$ author, {\small \emph{Appl. Phys. Lett.} vol. 103, july 2013}
 
-\cvsection{Publicaties}
-\cvbullet{juli 2013} \\
-Accurate quantification of magnetic particle properties by intra--pair magnetophoresis for nanobiotechnology | 3$^\mathrm{rd}$ author, {\small \emph{Appl. Phys. Lett.} vol. 103, july 2013}
+	\secsep
 
-\vspace{3mm}
-\hrule
-
-\cvsection{Talen}
-\emph{Professionele werkvaardigheid:} Nederlands, Engels\\
-\emph{Beperkte werkvaardigheid:} Spaans
+	\cvsection{Talen}{sticky-note}
+		\emph{Professionele werkvaardigheid:} Nederlands, Engels\\
+		\emph{Beperkte werkvaardigheid:} Spaans
 
 \columnbreak
 
-\cvsection{Werkervaring}
-\cvbullet{sep 2016 -- heden}\\
-Process Test Engineer | Philips Handheld Diagnostics (HHDx). \emph{Taken:} \\
-\cvbullet{juli 2016 -- sep 2016}\\
-Fietsenmaker -- Budget Fietsenhuis Eindhoven. \emph{Taken:} Verkoop, opknappen en reparaties van tweedehands fietsen \& ontwerp nieuwe website.\\
-\cvbullet{jan 2016 -- mei 2016}\\
-Externe stage: Philips HHDx. \emph{Onderwerp:} Quantification of the antibody affinity of the Minicare BNP assay.\\
-\cvbullet{dec 2013 -- dec 2014}\\
-Centrale Introductiecommissie | TU/e. \emph{Taken:} Organisatie introductieweek Eindhoven; sponsoren werven; merchandise; organisatie bedrijven-- \& sportmarkt.\\ 
-\cvbullet{mar 2012 -- oct 2013}\\
-Studentconsultant bij `Fysicawinkel' | \emph{Taken:} Uit-voeren en verwerken meting aan fijnstof en verkeersgeluid. Clienten van particulieren tot grotere bedrijven.\\
-\cvbullet{jan 2011 -- juli 2011}\\
-``Keurig Kiezen'' | Pre University College TU/e.\\
-\emph{Taken:} Geven van natuurkunde workshops en uitleg over profielkeuze aan middelbare scholieren.\\
-\cvbullet{jun 2008 -- jan 2010}\\
-Orderpicker | Friesland Campina (Eindhoven)
+	\cvsection{Werkervaring}{sticky-note}
+	\cvbullet{sep 2016 -- heden}\\
+		Process Test Engineer | Philips Handheld Diagnostics (HHDx). \emph{Taken:} Metingen uitvoeren m.b.t. ontwikkeling product (in-vitro diagnostiek).\\
+	\cvbullet{juli 2016 -- sep 2016}\\
+		Fietsenmaker -- Budget Fietsenhuis Eindhoven. \emph{Taken:} Verkoop, opknappen en reparaties van tweedehands fiets-en \& ontwerp \href{http://www.budgetfietsenhuis.nl}{nieuwe website}.\\
+	\cvbullet{jan 2016 -- mei 2016}\\
+		Externe stage: Philips HHDx. \emph{Onderwerp:} Quantification of the antibody affinity of the Minicare BNP assay.\\
+	\cvbullet{dec 2013 -- dec 2014}\\
+		Centrale Introductiecommissie | TU/e. \emph{Taken:} Organisatie introductieweek Eindhoven; sponsoren werven; merchandise; organisatie bedrijven- \& sportmarkt.\\ 
+	\cvbullet{mar 2012 -- oct 2013}\\
+		Studentconsultant bij `Fysicawinkel' | \emph{Taken:} Uit-voeren en verwerken meting aan fijnstof en verkeersgeluid. Clienten van particulieren tot grotere bedrijven.\\
+	\cvbullet{jan 2011 -- juli 2011}\\
+		``Keurig Kiezen'' | Pre University College TU/e.\\
+		\emph{Taken:} Geven van natuurkunde workshops en uitleg over profielkeuze aan middelbare scholieren.\\
+	\cvbullet{jun 2008 -- jan 2010}\\
+		Orderpicker | Friesland Campina (Eindhoven)
 
-\vspace{3mm}
-\hrule
+	\secsep
 
-\cvsection{Laboratorium skills}
-Antibody assays, protein immobilizatie, protein purification, verschillende chromatografie, UV/vis spectografie, gel electroforese, kinetiek experimenten, PCR, recombinant DNA, chemische syntese.
+	\cvsection{Laboratorium skills}{sticky-note}
+		Antibody assays, protein immobilizatie, protein purification, verschillende chromatografie, UV/vis spectografie, gel electroforese, kinetiek experimenten, PCR, recombinant DNA, organische syntese.
 
 
-\vspace{3mm}
-\hrule
+	\secsep
 
-\cvsection{Computer skills}
-Bedreven met (van meest naar minst ervaren) {\sc matlab}, GraphPad Prism, \LaTeX, Microsoft Office 2003 en hoger, Adobe Illustrator \& InDesign, Windows 7--10, various Linux systems \& webdesign languages HTML5, CSS3.
+	\cvsection{Computer skills}{sticky-note}
+		Bedreven met (van meest naar minst ervaren) {\sc matlab}, Microsoft Office 2003 en hoger, Minitab, Adobe Illustrator \& InDesign, \LaTeX, Windows 7--10, various Linux systems, webdesign languages HTML5, CSS3 \& Java (Android).
 
-\vspace{3mm}
-\hrule
+	\secsep
 
-\cvsection{Certificeerde cursusses}
-\cvbullet{jan 2014} \\
-Veilige Microbiologische Technieken (VMT)\\
-\cvbullet{mar 2012} \\
-Bedrijfshulpverlening (BHV)\\
-\cvbullet{sep 2010 -- feb 2011} \\
-Spaans level B1\\
+	\cvsection{Certificeerde cursusses}{sticky-note}
+	\cvbullet{jan 2014} \\
+		Veilige Microbiologische Technieken (VMT)\\
+	\cvbullet{mar 2012} \\
+		Bedrijfshulpverlening (BHV)\\
+	\cvbullet{sep 2010 -- feb 2011} \\
+		Spaans level B1\\
 
-\vspace{3mm}
-\hrule
+	\secsep
 
-\cvsection{Persoonlijk}
-\noindent \begin{tabular}{@{} >{\em}l l}
-Sport: & Fitness en wedstrijdzwemmen\\
-Muziek: & Piano en basgitaar\\
-Overig: & Rubik's Cube opgelost
-\end{tabular}
+	\cvsection{Persoonlijk}{sticky-note}
+	\noindent \begin{tabular}{@{} >{\em}l l}
+		Sport: & Fitness en wedstrijdzwemmen\\
+		Muziek: & Piano\\
+		Overig: & Rubik's Cube opgelost
+	\end{tabular}
 
-\vspace{3mm}
-\hrule
+	\secsep
 
-\vspace{3mm}
-\noindent\emph{Referenties zijn beschikbaar op aanvraag.}
+	\vspace{3mm}
+	\noindent\emph{Referenties zijn beschikbaar op aanvraag.}
 
 \end{multicols}
 \end{document}
