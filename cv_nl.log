@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.4)  4 DEC 2016 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.14)  14 DEC 2016 13:25
 entering extended mode
 **./cv_nl.tex
 (cv_nl.tex
@@ -250,9 +250,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (cv_nl.aux)
+(cv_nl.aux)
 \openout1 = `cv_nl.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -269,8 +267,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen126
@@ -379,13 +376,13 @@ Package rerunfilecheck Info: File `cv_nl.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 7194 strings out of 493333
- 105569 string characters out of 3139203
- 225153 words of memory out of 3000000
- 10670 multiletter control sequences out of 15000+200000
+ 7170 strings out of 493333
+ 105076 string characters out of 3139181
+ 224792 words of memory out of 3000000
+ 10648 multiletter control sequences out of 15000+200000
  7268 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,12n,32p,288b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,12n,32p,288b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontawesome/fontawesomethree.enc
 }{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{C
 :/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontawesome/fontawesometwo.enc}<C:/P
