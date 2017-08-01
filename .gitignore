@@ -1,3 +1,10 @@
+# Don't use Word
+*.doc*
+
+# Don't use LaTeX
+.tex
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

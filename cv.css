@@ -1,0 +1,35 @@
+html {
+	background-color: #FBFAFA;
+}
+html, body, h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+html, body {
+	font-size: 10pt;
+}
+h1, h2, h3, .fa {
+	color: #2E74B5; /* Light blue */
+}
+.page {
+	width: 21cm;
+	height: 29.7cm;
+	padding: 2cm;
+	margin: 1cm auto;
+	border: 1px #D4D4D4 solid;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.content {
+	border: 1px red dashed;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        /* Remove the 1cm top & bottom margin for printing */
+		margin: 0;
+    }
+}
