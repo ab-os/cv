@@ -2,7 +2,7 @@
 *.doc*
 
 # Don't use LaTeX
-.tex
+*.tex
 
 
 # Windows image file caches
