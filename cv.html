@@ -13,31 +13,121 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="cv.css">
 
-<body class="page">
-
-<div class="content">
-
-	<header class="w3-row-padding w3-border-bottom">
-		<div class="w3-col s2">
-			<img src="pasfoto.jpg" alt="Arjen Bos" height="76px" class="w3-card">
-		</div>
-		<div class="w3-col s4">
-			<h1>Arjen Bos</h1>
-		</div>
-		<div class="w3-half w3-right-align">
-			Eindhoven <i class="fa fa-fw fa-map-marker"></i><br>
-			+31 6 15399756 <i class="fa fa-fw fa-phone"></i><br>
-			arjen@bos4.nl <i class="fa fa-fw fa-envelope"></i><br>
-			03 jan 1991 <i class="fa fa-fw fa-birthday-cake"></i>
-		</div>
-	</header>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
+<body class="page wrapper flex-container">
+<div class="page-wrapper flex-container flex-vertical"> <!-- Just for now to see the border -->
+
+<!-- Header -->
+<header class="w3-row-padding w3-border-bottom">
+	<div class="w3-col s2">
+		<img src="pasfoto.jpg" alt="Arjen Bos" height="76px" class="w3-card">
+	</div>
+	<div class="w3-col s4">
+		<h1>Arjen Bos</h1>
+	</div>
+	<div class="w3-half w3-right-align">
+		Eindhoven <i class="fa fa-fw fa-map-marker"></i><br>
+		+31 6 15399756 <i class="fa fa-fw fa-phone"></i><br>
+		arjen@bos4.nl <i class="fa fa-fw fa-envelope"></i><br>
+		03 jan 1991 <i class="fa fa-fw fa-birthday-cake"></i>
+	</div>
+</header>
+
+<!-- Content -->
+<article class="w3-row">
+	<!-- Left column -->
+	<div class="w3-half flex-container flex-vertical cv-column">
+	
+		<!-- Persoonlijk -->
+		<section>
+			<h2><i class="fa fa-user w3-margin-right"></i>Persoonlijk profiel</h2>
+			<div class="flex-container">
+				<span>Proactief</span>&lowast;<span>Analytisch</span>&lowast;<span>Pragmatisch</span>&lowast;<span>Direct</span>
+			</div>
+		</section>
+		
+		<!-- Opleiding -->
+		<section>
+			<h2 class="w3-border-top"><i class="fa fa-sticky-note w3-margin-right"></i>Opleiding</h2>
+			<h3>sep 2013 - mei 2016</h3>
+			<p class="w3-justify">Biomedical Engineering (MSc) – Technische Universiteit
+			Eindhoven (TU/e). Afgestudeerd op: The development of
+			a novel glucose biosensor based on tethered particle motion</p>
+			
+			<h3>aug 2011 - mei 2016</h3>
+			<p class="w3-justify">Erasmus exchange naar Universitat de Barcelona (UB).
+			Vakken over moleculaire biologie and biochemie.</p>
+			
+			<h3>sep 2009 - juli 2013</h3>
+			<p class="w3-justify">Technische Natuurkunde (BSc) — TU/e. Eindproject: Determination
+			of magnetic properties of superparamagnetic microspheres.</p>
+			
+			<h3>sep 2009 - juli 2013</h3>
+			<p class="w3-justify">Atheneum N&T + N&G — Pleincollege Bisschop Bekkers, Eindhoven</p>
+		</section>
+		
+		<!-- Extracurriculair -->
+		<section>
+			<h2 class="w3-border-top"><i class="fa fa-sticky-note w3-margin-right"></i>Extracurriculaire activiteiten</h2>
+			<h3>sep 2014 - mar 2016</h3>
+			<p class="w3-justify">Raad van advies van ESWZV Nayade. Taken: Begeleiding
+			huidig bestuur over o.a. beleid, communicatie en organisatie.</p>
+			
+			<h3>sep 2012 - sep 2013</h3>
+			<p class="w3-justify">Bestuur van ESWZV Nayade. Taken: Verantwoordelijk voor 4 competitieteams en alle recreatieve leden. Wedstrijdplanning van het seizoen. Doorvoeren van verenigingsbeleidveranderingen. Organisatie en begeleiding van sociale en sportieve activiteiten.</p>
+			
+			<h3>mar 2012 - sep 2014</h3>
+			<p class="w3-justify">Verschillende commissies bij ESWZV Nayade: veelal organisatie van sociale activiteiten en 50e waterpolotoernooi.</p>
+			
+			<h3>mar 2010 - mei 2016</h3>
+			<p class="w3-justify">Oprichter en verschillende commissies Van–der–Waalsdispuut: Fysisch dispuut Hawking.</p>
+			
+			<h3>nov 2009 - dec 2013</h3>
+			<p class="w3-justify">Verschillende commissies bij SVTN “J.D. van der Waals”.</p>
+		</section>
+		
+		<!-- Publicaties -->
+		<section>
+			<h2 class="w3-border-top"><i class="fa fa-sticky-note w3-margin-right"></i>Publicaties</h2>
+			<h3>juli 2013</h3>
+			<p class="w3-justify">Accurate quantification of magnetic particle properties by
+			intra-pair magnetophoresis for nanobiotechnology &mdash; 3rd
+			author, <i>Appl. Phys. Lett.</i> vol. 103, july 2013</p>
+		</section>
+
+	<!-- Close left column -->
+	</div>
+	
+	
+	<!-- Right column -->
+	<div class="w3-half flex-container flex-vertical cv-column">
+		
+		<section class="cv-section">
+			Blabla
+		</section>
+		
+		<section class="cv-section">
+			Bladiebla
+		</section>
+		
+		<section class="cv-section">
+			Nog eentje.
+		</section>
+	
+	<!-- Close right column -->
+	</div>
 
 
 
-</div>    
+</article>    
 
 
+<!-- jQuery -->
+<script type="text/javascript" src="cv.js" ></script>
+
+</div>
 </body>
 </html>

@@ -10,17 +10,57 @@ html, body {
 h1, h2, h3, .fa {
 	color: #2E74B5; /* Light blue */
 }
+h2 {
+	font-size: 12pt;
+	margin: 0;
+	padding-top: 10px;
+}
+h3 {
+	font-style: italic;
+	font-size: 10pt;
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+.flex-vertical {
+	flex-direction: column;
+}
 .page {
 	width: 21cm;
 	height: 29.7cm;
-	padding: 2cm;
+	padding: 1cm;
 	margin: 1cm auto;
 	border: 1px #D4D4D4 solid;
 	background: white;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.content {
+.asterisk {
+	font-size: 12pt;
+	content: "&lowast;"
+}
+.w3-half {
 	border: 1px red dashed;
+}
+.cv-column {
+	height: 100%;
+}
+.cv-section {
+	background: yellow;
+}
+header, article {
+	border: 1px green dashed;
+}
+article {
+	flex: 1 1 auto;
+}
+.page-wrapper {
+	height: 100%;
+	border: 1px blue dashed;
 }
 
 @page {
