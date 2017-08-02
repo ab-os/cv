@@ -4,7 +4,7 @@
 <!-- Font Awesome -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<!-- W3.CSS Framework -->
+<!-- W3.CSS Framework, not explicitly used but does nice things for the font somehow -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-- Google Fonts -->
@@ -17,117 +17,164 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-<body class="page wrapper flex-container">
-<div class="page-wrapper flex-container flex-vertical"> <!-- Just for now to see the border -->
+<!-- A4 Page -->
+<body class="page">
 
-<!-- Header -->
-<header class="w3-row-padding w3-border-bottom">
-	<div class="w3-col s2">
-		<img src="pasfoto.jpg" alt="Arjen Bos" height="76px" class="w3-card">
-	</div>
-	<div class="w3-col s4">
+<!-- Wrapper with flexbox to stretch content to full height -->
+<div class="wrapper flex-container flex-vertical"> 
+
+	<!-- Header -->
+	<header class="flex-container cv-header">
+	
+		<img src="pasfoto.jpg" alt="Arjen Bos" height="76px">
+	
 		<h1>Arjen Bos</h1>
-	</div>
-	<div class="w3-half w3-right-align">
-		Eindhoven <i class="fa fa-fw fa-map-marker"></i><br>
-		+31 6 15399756 <i class="fa fa-fw fa-phone"></i><br>
-		arjen@bos4.nl <i class="fa fa-fw fa-envelope"></i><br>
-		03 jan 1991 <i class="fa fa-fw fa-birthday-cake"></i>
-	</div>
-</header>
-
-<!-- Content -->
-<article class="w3-row">
-	<!-- Left column -->
-	<div class="w3-half flex-container flex-vertical cv-column">
-	
-		<!-- Persoonlijk -->
-		<section>
-			<h2><i class="fa fa-user w3-margin-right"></i>Persoonlijk profiel</h2>
-			<div class="flex-container">
-				<span>Proactief</span>&lowast;<span>Analytisch</span>&lowast;<span>Pragmatisch</span>&lowast;<span>Direct</span>
-			</div>
-		</section>
 		
-		<!-- Opleiding -->
-		<section>
-			<h2 class="w3-border-top"><i class="fa fa-sticky-note w3-margin-right"></i>Opleiding</h2>
-			<h3>sep 2013 - mei 2016</h3>
-			<p class="w3-justify">Biomedical Engineering (MSc) – Technische Universiteit
-			Eindhoven (TU/e). Afgestudeerd op: The development of
-			a novel glucose biosensor based on tethered particle motion</p>
-			
-			<h3>aug 2011 - mei 2016</h3>
-			<p class="w3-justify">Erasmus exchange naar Universitat de Barcelona (UB).
-			Vakken over moleculaire biologie and biochemie.</p>
-			
-			<h3>sep 2009 - juli 2013</h3>
-			<p class="w3-justify">Technische Natuurkunde (BSc) — TU/e. Eindproject: Determination
-			of magnetic properties of superparamagnetic microspheres.</p>
-			
-			<h3>sep 2009 - juli 2013</h3>
-			<p class="w3-justify">Atheneum N&T + N&G — Pleincollege Bisschop Bekkers, Eindhoven</p>
-		</section>
+		<div class="right-align">
+			Eindhoven <i class="fa fa-fw fa-map-marker"></i><br>
+			+31 6 15399756 <i class="fa fa-fw fa-phone"></i><br>
+			arjen@bos4.nl <i class="fa fa-fw fa-envelope"></i><br>
+			03 Jan 1991 <i class="fa fa-fw fa-birthday-cake"></i>
+		</div>
 		
-		<!-- Extracurriculair -->
-		<section>
-			<h2 class="w3-border-top"><i class="fa fa-sticky-note w3-margin-right"></i>Extracurriculaire activiteiten</h2>
-			<h3>sep 2014 - mar 2016</h3>
-			<p class="w3-justify">Raad van advies van ESWZV Nayade. Taken: Begeleiding
-			huidig bestuur over o.a. beleid, communicatie en organisatie.</p>
-			
-			<h3>sep 2012 - sep 2013</h3>
-			<p class="w3-justify">Bestuur van ESWZV Nayade. Taken: Verantwoordelijk voor 4 competitieteams en alle recreatieve leden. Wedstrijdplanning van het seizoen. Doorvoeren van verenigingsbeleidveranderingen. Organisatie en begeleiding van sociale en sportieve activiteiten.</p>
-			
-			<h3>mar 2012 - sep 2014</h3>
-			<p class="w3-justify">Verschillende commissies bij ESWZV Nayade: veelal organisatie van sociale activiteiten en 50e waterpolotoernooi.</p>
-			
-			<h3>mar 2010 - mei 2016</h3>
-			<p class="w3-justify">Oprichter en verschillende commissies Van–der–Waalsdispuut: Fysisch dispuut Hawking.</p>
-			
-			<h3>nov 2009 - dec 2013</h3>
-			<p class="w3-justify">Verschillende commissies bij SVTN “J.D. van der Waals”.</p>
-		</section>
+	</header>
+
+	<!-- Content -->
+	<article class="flex-container cv-content">
+
+		<!-- Left column -->
+		<div class="flex-container flex-vertical cv-column margin-right">
 		
-		<!-- Publicaties -->
-		<section>
-			<h2 class="w3-border-top"><i class="fa fa-sticky-note w3-margin-right"></i>Publicaties</h2>
-			<h3>juli 2013</h3>
-			<p class="w3-justify">Accurate quantification of magnetic particle properties by
-			intra-pair magnetophoresis for nanobiotechnology &mdash; 3rd
-			author, <i>Appl. Phys. Lett.</i> vol. 103, july 2013</p>
-		</section>
+			<!-- Persoonlijk -->
+			<section class="cv-section">
+				<h2 class="no-icon"><i class="fa fa-user margin-right"></i>Persoonlijk profiel</h2>
+				<div class="flex-container">
+					<span>Proactief</span>&lowast;<span>Analytisch</span>&lowast;<span>Pragmatisch</span>&lowast;<span>Direct</span>
+				</div>
+			</section>
+			
+			<!-- Opleiding -->
+			<section class="cv-section">
+				<h2>Opleiding</h2>
+				<h3><strong>Biomedical Engineering (MSc)</strong><span class="date">sep 2013 - mei 2016</span></h3>
+				<p>Technische Universiteit Eindhoven (TU/e) &ndash; <i>Afgestudeerd op:</i> The development of a novel biosensing technique based on tethered particle motion.</p>
+				
+				<h3><strong>Technische Natuurkunde (BSc)</strong><span class="date">sep 2009 - juli 2013</h3>
+				<p>TU/e &ndash; <i>Eindproject:</i> Determination of magnetic properties of superparamagnetic microspheres for biosensing.</p>
+				
+				<h3>Erasmus Exchange<span class="date">aug 2011 - mei 2016</span></h3>
+				<p>Universitat de Barcelona (UB). Studie moleculaire biologie and biochemie.</p>
+				
+				<h3>Atheneum N&amp;T + N&amp;G<span class="date">sep 2009 - juli 2013<span></h3>
+				<p>Pleincollege Bisschop Bekkers, Eindhoven</p>
+			</section>
+			
+			<!-- Extracurriculair -->
+			<section class="cv-section">
+				<h2>Verenigingen &amp; activiteiten</h2>
+				<h3>Raad van advies ESWZV Nayade<span class="date">sep 2014 - mar 2016</span></h3>
+				<p>Begeleiding van het bestuur over o.a. beleid, communicatie en organisatie.</p>
+				
+				<h3><strong>Bestuursjaar ESWZV Nayade</strong><span class="date">sep 2012 - sep 2013</span></h3>
+				<p>Leiding vereniging &sim;200 leden incl. competitieteams en commissies. Wedstrijdplanning van het seizoen. Doorvoeren van beleidveranderingen. Organisatie en begeleiding van activiteiten.</p>
+				
+				<h3>Commissies ESWZV Nayade<span class="date">mar 2012 - sep 2014</span></h3>
+				<p>Onder andere activiteiten- en toernooicommissie.</p>
+				
+				<h3>Oprichter Dispuut Hawking<span class="date">mar 2010 - mei 2016</span></h3>
+				<p>Oprichting en commissies bij Fysisch dispuut Hawking.</p>
+				
+				<h3>Commissies Van der Waals<span class="date">nov 2009 - dec 2013</span></h3>
+				<p>Verschillende commissies SVTN &ldquo;J.D. van der Waals&rdquo;.</p>
+			</section>
+			
+			<!-- Publicaties -->
+			<section class="cv-section">
+				<h2>Publicaties</h2>
+				<h3 class="italic">juli 2013</h3>
+				<p>Accurate quantification of magnetic particle properties by intra-pair magnetophoresis for nanobiotechnology &mdash; 3rd author, <i>Appl. Phys. Lett.</i> vol. 103, july 2013</p>
+			</section>
+			
+			<!-- Cursussen -->
+			<section class="cv-section">
+				<h2>Gecertificeerde cursussen</h2>
+				<h3 class="italic">jan 2014</h3>
+				<p>Veilige Microbiologische Technieken (VMT) + HepB</p>
+				
+				<h3 class="italic">mar 2012 - mar 2014</h3>
+				<p>Bedrijfshulpverlener (BHV) incl. EHBO</p>
+			</section>
 
-	<!-- Close left column -->
-	</div>
-	
-	
-	<!-- Right column -->
-	<div class="w3-half flex-container flex-vertical cv-column">
+		<!-- Close left column -->
+		</div>
 		
-		<section class="cv-section">
-			Blabla
-		</section>
 		
-		<section class="cv-section">
-			Bladiebla
-		</section>
-		
-		<section class="cv-section">
-			Nog eentje.
-		</section>
-	
-	<!-- Close right column -->
-	</div>
+		<!-- Right column -->
+		<div class="flex-container flex-vertical cv-column margin-left">
+			
+			<!-- Werkervaring -->
+			<section class="cv-section">
+				<h2>Werkervaring</h2>
+				<h3><strong>Process Development Engineer</strong><span class="date">sep 2016 - sep 2017</span></h3>
+				<p>Philips Handheld Diagnostics (HHDx) &ndash; Ontwikkeling van productie proces Minicare cartridges (point-of-care biosensor). Opzetten experimenten; data analyse; beeld analyse (MATLAB).</p>
 
+				<h3>Fietsmonteur/-verkoper<span class="date">juli 2016 - sep 2016</span></h3>
+				<p>En websitebouwer &ndash; Budget Fietsenhuis Eindhoven.</p>
+				
+				<h3>Internship R&amp;D<span class="date">jan 2016 - mei 2016</span></h3>
+				<p>Philips HHDx &ndash; <i>Onderwerp:</i> Quantification of antibody affinities of the BNP immunoassay.</p>
+				
+				<h3><strong>Centrale Introductiecommissie</strong><span class="date">dec 2013 - dec 2014</span></h3>
+				<p>TU/e &ndash; Organisatie gehele introductieweek; sponsoren werven; merchandise; opzetten bedrijven- &amp; sportmarkt; aansturen commissies &amp; vrijwilligers.
+				
+				<h3>Studentconsultant<span class="date">mar 2012 - oct 2013</span></h3>
+				<p>Fysicawinkel TU/e &ndash; Uitvoeren en rapporteren metingen aan fijnstof en verkeersgeluid voor particulieren en MKB.</p>
+				
+				<h3>Pre University College<span class="date">jan 2011 - juli 2011</span></h3>
+				<p>&ldquo;Keurig Kiezen&rdquo; TU/e &ndash; Geven van natuurkunde workshops (vloeibaar N<sub>2</sub>, thermokoppel) en uitleg over profielkeuze aan middelbare scholieren.</p>
+			</section>
+			
+			<!-- Lab -->
+			<section class="cv-section">
+				<h2>Laboratorium skills</h2>
+				<p>Immunoassays, protein immobilizatie/conjugatie, protein purification, verschillende chromatografie, UV/vis spectografie, gel electrophorese, PCR, recombinant DNA, genetische modificaties, organische synthese.
+			</section>
+			
+			<!-- Computer -->
+			<section class="cv-section">
+				<h2>Computer skills</h2>
+				<p>Bedreven met (van meest van minst ervaren) <strong>MATLAB</strong>, Microsoft <strong>Excel</strong> &amp; Word, Minitab, Git, Windows 7&ndash;10; verschillende Linux, Adobe Illustrator, webdesign markup.</p>
+			</section>
+			
+			<!-- Talen -->
+			<section class="cv-section">
+				<h2>Talen</h2>
+				<span class="inline italic margin-right">Professionele werkvaardigheid:<br>Beperkte werkvaardigheid</span>
+				<span class="inline"> Nederlands, Engels<br>Spaans</span>
+			</section>
 
+			<!-- Over mij -->
+			<section class="cv-section">
+				<h2>Over mij</h2>
+				<span class="inline italic margin-right">Sport:<br>Muziek:<br>Overig:</span>
+				<span class="inline">Fitness, boksen, zwemmen<br>Piano<br>Rubik&rsquo;s Cube opgelost</span>
+			</section>		
+			
+			<!-- Referenties -->
+			<section class="cv-section">
+				<p class="italic">Referenties zijn beschikbaar op aanvraag.</p>
+			</section>
+			
+		<!-- Close right column -->
+		</div>
 
-</article>    
+	</article>    
 
-
-<!-- jQuery -->
-<script type="text/javascript" src="cv.js" ></script>
-
+<!-- Close wrapper -->	
 </div>
+	
+<!-- jQuery -->
+<script type="text/javascript" src="cv.js"></script>
+
 </body>
 </html>

@@ -5,33 +5,31 @@ html, body, h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 }
 html, body {
-	font-size: 10pt;
+	font-size: 10pt; /* See as default font size */
 }
 h1, h2, h3, .fa {
-	color: #2E74B5; /* Light blue */
+	color: #2E74B5; /* Light blue headers and icons */
+}
+h2, h3, p {
+	margin: 0;
 }
 h2 {
 	font-size: 12pt;
-	margin: 0;
 	padding-top: 10px;
 }
 h3 {
-	font-style: italic;
+	margin-top: 2px;
 	font-size: 10pt;
-	margin: 0;
 }
-p {
-	margin: 0;
-}
+.italic { font-style: italic; }
 .flex-container {
 	display: flex;
 	justify-content: space-between;
 }
-.flex-vertical {
-	flex-direction: column;
-}
+.flex-vertical { flex-direction: column; }
+.flex-no-shrink { flex: 1 0 auto; }
 .page {
-	width: 21cm;
+	width: 21cm; /* A4 */
 	height: 29.7cm;
 	padding: 1cm;
 	margin: 1cm auto;
@@ -39,37 +37,35 @@ p {
 	background: white;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.asterisk {
-	font-size: 12pt;
-	content: "&lowast;"
-}
-.w3-half {
-	border: 1px red dashed;
-}
+.date { float: right; }
 .cv-column {
-	height: 100%;
-}
-.cv-section {
-	background: yellow;
-}
-header, article {
-	border: 1px green dashed;
+	flex: 1; /* Divide space evenly over all (in this case two) cv-columns */
 }
 article {
-	flex: 1 1 auto;
+	flex: 1 1 auto; /* Grow or shrink to fill up page height */
 }
-.page-wrapper {
+.wrapper {
 	height: 100%;
-	border: 1px blue dashed;
 }
-
+.cv-header {
+	border-bottom: thin solid #D4D4D4;
+}
+.cv-section > p {
+	text-align: justify;
+}
+.cv-section:not(:first-child) {
+	border-top: thin solid #D4D4D4;
+}
+.margin-right {	margin-right: 16px; }
+.margin-left { margin-left: 16px; }
+.right-align { text-align: right }
+.inline { display: inline-block; }
 @page {
     size: A4;
     margin: 0;
 }
 @media print {
     .page {
-        /* Remove the 1cm top & bottom margin for printing */
-		margin: 0;
+		margin: 0; /* Remove the 1cm top & bottom margin for printing */
     }
 }
