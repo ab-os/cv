@@ -12,9 +12,9 @@ $(".cv-section > h3 > .date").addClass("flex-no-shrink right-align italic");
 // Add icon to h2, expect for the no-icon
 $(".cv-section > h2").not(".no-icon").prepend('<i class="fa fa-sticky-note margin-right"></i>&nbsp;');
 
-// Get the HTML language
+// Get the language from the HTML div
 var lang = document.documentElement.lang;
-// Hide all other languages
+// Hide all div with other language
 $("*").not(":lang(" + lang + ")").hide();
 
 // If English replace the date months

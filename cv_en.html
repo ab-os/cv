@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!-- W3.CSS Framework, not explicitly used but does nice things for the font somehow -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="cv.css">
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- A4 Page -->
+<body class="page">
+
+<!-- Wrapper with flexbox to stretch content to full height -->
+<div class="wrapper flex-container flex-vertical"> 
+
+	<!-- Header -->
+	<header class="flex-container cv-header">
+	
+		<img src="pasfoto.jpg" alt="Arjen Bos" height="76px">
+	
+		<h1>Arjen Bos</h1>
+		
+		<div class="right-align">
+			Eindhoven <i class="fa fa-fw fa-map-marker"></i><br>
+			+31 6 15399756 <i class="fa fa-fw fa-phone"></i><br>
+			arjen@bos4.nl <i class="fa fa-fw fa-envelope"></i><br>
+			03 Jan 1991 <i class="fa fa-fw fa-birthday-cake"></i>
+		</div>
+		
+	</header>
+
+	<!-- Content -->
+	<article class="flex-container cv-content">
+
+		<!-- Left column -->
+		<div class="flex-container flex-vertical cv-column margin-right">
+		
+			<!-- Persoonlijk -->
+			<section class="cv-section">
+				<h2 class="no-icon"><i class="fa fa-user margin-right"></i>Personal profile</h2>
+				<div class="flex-container">
+					<span>Proactive</span>&lowast;<span>Analytic</span>&lowast;<span>Pragmatic</span>&lowast;<span>Direct</span>
+				</div>
+			</section>
+			
+			<!-- Opleiding -->
+			<section class="cv-section">
+				<h2>Education</h2>
+				<h3><strong>Biomedical Engineering (MSc)</strong><span class="date">sep 2013 - mei 2016</span></h3>
+				<p>Eindhoven University of Technology (TU/e) &ndash; <i>Graduated on:</i> The development of a novel biosensing technique based on tethered particle motion.</p>
+				
+				<h3><strong>Applied Physics (BSc)</strong><span class="date">sep 2009 - juli 2013</span></h3>
+				<p>TU/e &ndash; <i>Graduated on:</i> Determination of magnetic properties of superparamagnetic microspheres for biosensing.</p>
+				
+				<h3>Erasmus Exchange<span class="date">aug 2011 - feb 2012</span></h3>
+				<p>Universitat de Barcelona (UB) &ndash; Study molecular biology, biochemistry and genetics.</p>
+				
+				<h3>Atheneum N&amp;T + N&amp;G<span class="date">sep 2003 - mei 2009<span></h3>
+				<p>Pleincollege Bisschop Bekkers, Eindhoven</p>
+			</section>
+			
+			<!-- Extracurriculair -->
+			<section class="cv-section">
+				<h2>Associations &amp; Activities</h2>
+				<h3>Advisory board ESWZV Nayade<span class="date">sep 2014 - mar 2016</span></h3>
+				<p>Supervision and guidance of the board about (a.o.) policy, communication and organization.</p>
+				
+				<h3><strong>Board ESWZV Nayade</strong><span class="date">sep 2012 - sep 2013</span></h3>
+				<p>Leading swim and waterpolo association &sim;200 members including teams and committees, planning of the game season, implementing policy changes, direction of activities.</p>
+				
+				<h3>Committees ESWZV Nayade<span class="date">mar 2012 - sep 2014</span></h3>
+				<p>Organization of social and sport activities.</p>
+				
+				<h3>Founder Dispuut Hawking<span class="date">mar 2010 - mei 2016</span></h3>
+				<p>Foundation and committees at Fysisch dispuut Hawking.</p>
+				
+				<h3>Committees Van der Waals<span class="date">nov 2009 - dec 2013</span></h3>
+				<p>Several (social) committees SVTN &ldquo;J.D. van der Waals&rdquo;.</p>
+			</section>
+			
+			<!-- Publicaties -->
+			<section class="cv-section">
+				<h2>Publications</h2>
+				<h3 class="italic">july 2013</h3>
+				<p>Accurate quantification of magnetic particle properties by intra-pair magnetophoresis for nanobiotechnology &mdash; 3rd author, <i>Appl. Phys. Lett.</i> vol. 103, july 2013</p>
+			</section>
+			
+			<!-- Cursussen -->
+			<section class="cv-section">
+				<h2>Certified courses</h2>
+				<h3 class="italic">feb 2017</h3>
+				<p>Lean Course (Basics &amp; Idea2Market)</p>
+				
+				<h3 class="italic">jan 2014</h3>
+				<p>Safe Microbiologic Techniques (SMT) + HepB</p>
+				
+				<h3 class="italic">mar 2012 &ndash; mar 2014</h3>
+				<p>Bedrijfshulpverlener (BHV) incl. First Aid</p>
+			</section>
+
+		<!-- Close left column -->
+		</div>
+		
+		
+		<!-- Right column -->
+		<div class="flex-container flex-vertical cv-column margin-left">
+			
+			<!-- Werkervaring -->
+			<section class="cv-section">
+				<h2>Work experience</h2>
+				<h3><strong>Process Development Engineer</strong><span class="date">sep 2016 - sep 2017</span></h3>
+				<p>Philips Handheld Diagnostics (HHDx) &ndash; <strong>Development product process</strong> by setting up experiments, data analysis, programming (MATLAB). <strong>Troubleshooting</strong> by recognizing problems/bottlenecks, exploring, planning and solving them.</p>
+				
+				<h3>Internship R&amp;D<span class="date">jan 2016 - may 2016</span></h3>
+				<p>Philips HHDx &ndash; <i>Onderwerp:</i> Quantification of antibody affinities of the BNP immunoassay.</p>
+				
+				<h3><strong>Central Introduction Committee</strong><span class="date">dec 2013 - dec 2014</span></h3>
+				<p>TU/e &ndash; Organization and direction of entire student introduction week, <strong>planning</strong>, recruiting sporsors, merchandise, direct companies &amp; sports market, leading committies &amp; volunteers.
+				
+				<h3>Student Consultant<span class="date">mar 2012 - oct 2013</span></h3>
+				<p>Fysicawinkel (TU/e) &ndash; Conduct and report measurements regarding particulates and traffic noise for small to medium companies.</p>
+				
+				<h3>Pre University College<span class="date">jan 2011 - july 2011</span></h3>
+				<p>&ldquo;Keurig Kiezen&rdquo; TU/e &ndash; Give physics workshops (liquid N<sub>2</sub>, thermocouple) to high school students.</p>
+			</section>
+			
+			<!-- Lab -->
+			<section class="cv-section">
+				<h2>Laboratory skills</h2>
+				<p>Immunoassays, protein immobilization/conjugation, protein purification, several chromatography, UV/vis spectography, gel electrophorese, PCR, recombinant DNA, genetic modifications, organic synthesis.
+			</section>
+			
+			<!-- Computer -->
+			<section class="cv-section">
+				<h2>Computer skills</h2>
+				<p>Experienced with (from most to least) <strong>MATLAB</strong>, Microsoft <strong>Excel</strong> &amp; Word, Minitab, Git, Windows 7&ndash;10, various Linux, Adobe Illustrator, webdesign markup languages.</p>
+			</section>
+			
+			<!-- Talen -->
+			<section class="cv-section">
+				<h2>Languages</h2>
+				<span class="inline italic margin-right">Professional proficiency:<br>Limited proficiency:</span>
+				<span class="inline"> Dutch, English<br>Spanish</span>
+			</section>
+
+			<!-- Over mij -->
+			<section class="cv-section">
+				<h2>Interests</h2>
+				<span class="inline italic margin-right">Sports:<br>Music:<br>Hobbies:<br><br>Other:</span>
+				<span class="inline">Fitness, boxing, swimming<br>Playing piano<br>Repairing/building race bikes<br>Working with computers/websites<br>Rubik&rsquo;s Cube solved</span>
+			</section>
+			
+		<!-- Close right column -->
+		</div>
+
+	</article>    
+
+<!-- Close page wrapper -->	
+</div>
+	
+<!-- jQuery -->
+<script type="text/javascript" src="cv.js"></script>
+
+</body>
+</html>
