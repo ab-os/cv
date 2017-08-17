@@ -1,33 +1,16 @@
 html {
-	background-color: #FBFAFA;
+	background-color: #FCFAFA;
 }
 html, body, h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
-}
-html, body {
-	font-size: 10pt; /* See as default font size */
+	text-align: justify;
 }
 h1, h2, h3, .fa {
 	color: #2E74B5; /* Light blue headers and icons */
 }
-h2, h3, p {
-	margin: 0;
+html, body {
+	font-size: 10pt; /* Default font size */
 }
-h2 {
-	font-size: 12pt;
-	padding-top: 10px;
-}
-h3 {
-	margin-top: 2px;
-	font-size: 10pt;
-}
-.italic { font-style: italic; }
-.flex-container {
-	display: flex;
-	justify-content: space-between;
-}
-.flex-vertical { flex-direction: column; }
-.flex-no-shrink { flex: 1 0 auto; }
 .page {
 	width: 21cm; /* A4 */
 	height: 29.7cm;
@@ -37,29 +20,47 @@ h3 {
 	background: white;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.date { float: right; }
-.cv-column {
-	flex: 1; /* Divide space evenly over all (in this case two) cv-columns */
-}
-article {
-	flex: 1 1 auto; /* Grow or shrink to fill up page height */
-}
 .wrapper {
 	height: 100%;
 }
-.cv-header {
+header {
 	border-bottom: thin solid #D4D4D4;
 }
-.cv-section > p {
-	text-align: justify;
+article {
+	flex: 1 0 auto; /* Grow to fill up page height */
 }
-.cv-section:not(:first-child) {
+.column {
+	flex: 1; /* Divide space evenly over all (in this case two) cv-columns */
+}
+section:not(:first-child) {
 	border-top: thin solid #D4D4D4;
 }
+h2, h3, p {
+	margin: 0;
+}
+h2 {
+	font-size: 12pt;
+	margin-top: 10px;
+}
+h3 {
+	font-size: 10pt;
+	margin-top: 2px;
+}
+.date { font-style: italic; }
+.date:not(.left-align) { float: right; }
+.italic { font-style: italic; }
 .margin-right {	margin-right: 16px; }
 .margin-left { margin-left: 16px; }
 .right-align { text-align: right }
 .inline { display: inline-block; }
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+.flex-vertical { flex-direction: column; }
+.flex-no-shrink { flex: 1 0 auto; }
+
+
 @page {
     size: A4;
     margin: 0;
