@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 ul.skills > li {
-    @apply text-xs text-gray-600 inline py-1 px-2 border border-gray-600 rounded-full;
+    @apply inline text-xs text-primary-dark border border-primary-dark py-1 px-2 rounded-full;
 }

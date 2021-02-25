@@ -31714,7 +31714,7 @@ video {
 
 ul.skills > li {
   --tw-border-opacity: 1;
-  border-color: rgba(75, 85, 99, var(--tw-border-opacity));
+  border-color: rgba(57, 62, 68, var(--tw-border-opacity));
   border-radius: 9999px;
   border-width: 1px;
   display: inline;
@@ -31725,7 +31725,7 @@ ul.skills > li {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity));
+  color: rgba(57, 62, 68, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
