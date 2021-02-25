@@ -5,74 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arjen Bos CV</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="font-body bg-gray-50">
     
-    <div class="grid grid-cols-3">
+    <div class="A4 mx-auto my-16 shadow-2xl overflow-hidden">
         
-        <div class="col-span-1 bg-gray-600">
-            <div class="rounded-full overflow-hidden w-48 h-48">
-                <img src="img/Pasfoto Aegon.jpg" alt="Pasfoto">
-            </div>
-        </div>
-        
-        <div class="col-span-2 bg-gray-400">
-            <h1>Arjen Bos</h1>
-        </div>
-        
-    </div>
-    
-    <div class="bg-yellow-500 text-gray-800 p-12">
-        <div class="flex items-center justify-around">
-            <a href="#" class="text-3xl"><i class="fa fa-linkedin-square"></i></a>
-            <a href="#" class="text-3xl"><i class="fa fa-github"></i></a>
-            <div><span class="text-3xl"><i class="fa fa-map-marker"></i></span>Eindhoven</div>
-            <a href="tel:+31615399756"><span class="text-3xl"><i class="fa fa-whatsapp"></i></span> +31 6 15399756</a>
-            <a href="mailto:arjenbos91@hotmail.com"><span class="text-3xl"><i class="fa fa-envelope"></i></span> arjenbos91@hotmail.com</a>
-        </div>
-    </div>
-    
-    <div class="grid grid-cols-3">
-        <div class="col-span-1 p-8 bg-gray-700 text-gray-200">
-            <div>
-                <h2>Opleiding</h2>
-                <div>
-                    <span>MSc Biomedical Engineering</span>
-                    <span>Technische Universiteit Eindhoven</span>
-                    <span>2013-2016</span>
+        <div class="grid grid-cols-3">
+            <div class="col-span-1 p-8 bg-primary-dark">
+                <div class="rounded-full overflow-hidden w-32 h-32 m-auto">
+                    <img src="img/pasfoto.jpg" alt="Pasfoto">
                 </div>
             </div>
-            <div>
-                <h2>Cursussen</h2>
-                <div>
-                    <span>Power BI DA-100</span>
-                    <span>Microsoft</span>
-                    <span>2020</span>
-                </div>
+            
+            <div class="col-span-2 p-6 bg-primary-light text-primary-dark">
+                <h1 class="text-4xl font-header font-bold mt-8 pb-2">Arjen Bos</h1>
+                <h2 class="text-xl font-header uppercase tracking-wider">Data Analyst</h2>
+            </div>
+            
+        </div>
+        
+        <div class="bg-secondary text-primary-dark p-8">
+            <div class="flex items-center justify-around">
+                <a href="https://www.linkedin.com/in/arjenbos4/" target="_blank" class="text-xl"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/arjobsen" target="_blank" class="text-xl"><i class="fa fa-github"></i></a>
+                <a href="tel:+31615399756"><span class="text-xl"><i class="fa fa-whatsapp pr-2"></i></span>+31 6 15399756</a>
+                <a href="mailto:arjenbos91@hotmail.com"><span class="text-xl"><i class="fa fa-envelope-o pr-2"></i></span>arjen@bos4.nl</a>
+                <div><span class="text-xl"><i class="fa fa-map-marker pr-2"></i></span>Eindhoven</div>
             </div>
         </div>
         
-        <div class="col-span-2 p-8 bg-gray-200">
-            <div>
-                <div class="h-2 w-32 bg-gray-700 text-gray-700 mt-12"></div>
-                <h2 class="text-lg font-bold uppercase tracking-wider">Werkervaring</h2>
+        <div class="grid grid-cols-3 h-full">
+            <div class="col-span-1 p-6 bg-primary-dark text-primary-light">
                 <div>
-                    <div>
-                        <span>2016-2020</span>
-                        <span>Data Analyst - ABN AMRO</span>
+                    <div class="h-1 w-16 bg-primary-light my-2"></div>
+                    <h2 class="text-lg text-secondary font-bold uppercase tracking-wider font-header">Opleiding</h2>
+                    <div class="mb-6">
+                        <span class="text-sm">2017</span>
+                        <span class="block">Traineeship BI & Big Data</span>
+                        <span class="block text-sm">Young Capital Professionals</span>
+                        <span class="block text-sm">ITPH Academy</span>
                     </div>
-                    <div>
-                        <span class="skill">Power BI</span>
-                        <span class="skill">Python</span>
-                        <span class="skill">SQL</span>
+                    <div class="mb-6">
+                        <span class="text-sm">2013 - 2016</span>
+                        <span class="block">MSc Biomedical Engineering</span>
+                        <span class="block text-sm">Technische Universiteit Eindhoven</span>
                     </div>
-                    <p>Bij ABN AMRO ben ik data data bla bla.</p>
+                    <div class="mb-6">
+                        <span class="text-sm">2009 - 2013</span>
+                        <span class="block">BSc Technische Natuurkunde</span>
+                        <span class="block text-sm">Technische Universiteit Eindhoven</span>
+                        <span class="block text-sm">Universidad de Barcelona</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="h-1 w-16 bg-primary-light mt-6 mb-2"></div>
+                    <h2 class="text-lg text-secondary font-bold uppercase tracking-wider font-header">Cursussen</h2>
+                    <div>
+                        <span class="text-sm">2020</span>
+                        <ul>
+                            <li>Power BI DA-100 &middot; <span class="text-sm">Microsoft</span></li>
+                            <li>PSM I &middot; <span class="text-sm">Scrum.org</span></li>
+                            <li>Teradata Vantage Certified Associate &middot; <span class="text-sm">Teradata</span></li>
+                        </ul>
+                        <span class="text-sm">2019</span>
+                        <ul>
+                            <li>Certified Celonis Analyst &middot; <span class="text-sm">Celonis</span></li>
+                            <li>Lean Green Belt &middot; <span class="text-sm">IIBLC</span></li>
+                            <li>Transact-SQL DAT201x &middot; <span class="text-sm">Microsoft</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-span-2 p-6 bg-primary-light text-primary-dark">
+                <div>
+                    <div class="h-1 w-16 bg-primary-dark mt-6 mb-2"></div>
+                    <h2 class="text-lg mb-4 font-bold uppercase tracking-wider font-header">Werkervaring</h2>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between pb-2">
+                            <div>
+                                <span class="block font-bold uppercase">Consultant Analytics</span>
+                                <span class="block text-sm">EIFFEL</span>
+                            </div>
+                            <span class="text-sm">2018 - heden</span>
+                        </div>
+                        <ul class="skills">
+                            <li>Power BI</li>
+                            <li>Python</li>
+                        </ul>
+                        <p>Bij eiffeltje bla bla</p>
+                        
+                        <div class="pl-4 py-4"><!-- Projecten -->
+                            <div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span class="block uppercase">Data Analyst</span>
+                                        <span class="block text-sm">ABN AMRO</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-sm">2020 - heden</span>
+                                        <span class="block text-xs">(8 maanden)</span>
+                                    </div>
+                                </div>
+                                <ul class="skills">
+                                    <li>Power BI</li>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>Git</li>
+                                </ul>
+                                <p>Bij ABN AMRO ben ik data data bla bla.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between pb-2">
+                            <div>
+                                <span class="block font-bold uppercase">Process Development Engineer</span>
+                                <span class="block text-sm">Philips Handheld Diagnostics</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-sm">2016 - 2017</span>
+                                <span class="block text-xs">(12 maanden)</span>
+                            </div>
+                        </div>
+                        <ul class="skills">
+                            <li>MATLAB</li>
+                            <li>VBA</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between pb-2">
+                            <div>
+                                <span class="block font-bold uppercase">Websitemaker</span>
+                                <span class="block text-sm">Tijdvooreenweb.site</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-sm">2018 - heden</span>
+                            </div>
+                        </div>
+                        <ul class="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-    
 </body>
 </html>
