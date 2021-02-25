@@ -31712,9 +31712,21 @@ video {
           animation: bounce 1s infinite;
 }
 
-/* ul.skills > li {
-    @apply text-xs text-gray-600 inline py-1 px-2 border border-gray-600 rounded-full;
-} */
+ul.skills > li {
+  --tw-border-opacity: 1;
+  border-color: rgba(75, 85, 99, var(--tw-border-opacity));
+  border-radius: 9999px;
+  border-width: 1px;
+  display: inline;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
 
 @media (min-width: 640px) {
   .sm\:container {
