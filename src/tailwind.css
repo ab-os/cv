@@ -5,3 +5,7 @@
 ul.skills > li {
     @apply inline text-xs text-primary-dark border border-primary-dark py-1 px-2 rounded-full;
 }
+
+.icon {
+    @apply text-xl w-8 text-center pr-2;
+}
