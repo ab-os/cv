@@ -1,0 +1,38 @@
+- organisatie: EIFFEL
+  functie: Professional Analytics
+  periode: Feb 2018 - heden
+- organisatie: ABN AMRO
+  functie: Data Analyst
+  periode: Aug 2020 - heden
+  skills:
+      - Power BI
+      - Python
+      - Git
+      - SQL
+- organisatie: Belastingdienst
+  functie: Business Analyst
+  periode: Aug 2019 - Jul 2020
+  skills:
+    - Teradata
+    - Excel
+    - SAS VA
+    - Celonis
+- organisatie: Rabobank
+  functie: Trainer Power BI
+  periode: Jun 2019
+  skills:
+    - Power BI
+- organisatie: Tijdvooreenweb.site
+  functie: Freelance Website Developer
+  periode: Jan 2018 - heden
+  skills:
+    - HTML
+    - CSS
+    - Python
+- organisatie: Philips Handheld Diagnostics
+  functie: Process Development Engineer
+  periode: Sep 2016 - Aug 2017
+  skills:
+    - MATLAB
+    - PowerShell
+    - VBA

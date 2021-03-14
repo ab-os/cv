@@ -71,18 +71,14 @@
                     <div class="h-1 w-16 bg-primary-light mt-6 mb-2"></div>
                     <h2 class="text-lg text-secondary font-bold uppercase tracking-wider font-header">Certificaten</h2>
                     <div>
-                        <span class="text-sm">2020</span>
+                        {% for iname, idata in certificaten.items() %}
+                        <span class="text-sm">{{ iname }}</span>
                         <ul class="mb-6">
-                            <li>Power BI DA-100 &middot; <span class="text-sm">Microsoft</span></li>
-                            <li>PSM I &middot; <span class="text-sm">Scrum.org</span></li>
-                            <li>Teradata Vantage Certified Associate &middot; <span class="text-sm">Teradata</span></li>
+                            {% for certificaat in idata %}
+                            <li>{{ certificaat.naam }} &middot; <span class="text-sm">{{ certificaat.organisatie }}</span></li>
+                            {% endfor %}
                         </ul>
-                        <span class="text-sm">2019</span>
-                        <ul class="mb-6">
-                            <li>Certified Celonis Analyst &middot; <span class="text-sm">Celonis</span></li>
-                            <li>Lean Green Belt &middot; <span class="text-sm">IIBLC</span></li>
-                            <li>T-SQL DAT201x &middot; <span class="text-sm">Microsoft</span></li>
-                        </ul>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -92,87 +88,22 @@
                 <div class="h-1 w-16 bg-primary-dark my-2"></div>
                 <h2 class="text-lg mb-4 font-bold uppercase tracking-wider font-header">Werkervaring</h2>
                 
+                {% for project in projecten %}
                 <div class="mt-4 flex justify-between w-full">
                     <div>
-                        <div class="font-bold tracking-wide">Professional Analytics</div>
-                        <div class="text-sm">EIFFEL</div>
-                        <div class="text-sm italic">Feb 2018 - heden</div>
+                        <div class="font-bold tracking-wide">{{ project.functie }}</div>
+                        <div class="text-sm">{{ project.organisatie }}</div>
+                        <div class="text-sm italic">{{ project.periode }}</div>
                     </div>
                     <div class="flex justify-between pb-2">
                         <ul class="skills">
+                            {% for s in project.skills %}
+                            <li>{{ s }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
-                <div class="mt-4 flex justify-between w-full">
-                    <div>
-                        <div class="font-bold tracking-wide">Data Analyst</div>
-                        <div class="text-sm">ABN AMRO</div>
-                        <div class="text-sm italic">Aug 2020 - heden</div>
-                    </div>
-                    <div class="flex justify-between pb-2">
-                        <ul class="skills">
-                            <li>Power BI</li>
-                            <li>Python</li>
-                            <li>Git</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-4 flex justify-between w-full">
-                    <div>
-                        <div class="font-bold tracking-wide">Business Analyst</div>
-                        <div class="text-sm">Belastingdienst</div>
-                        <div class="text-sm italic">Aug 2019 - Jul 2020</div>
-                    </div>
-                    <div class="flex justify-between pb-2">
-                        <ul class="skills">
-                            <li>Teradata</li>
-                            <li>Excel</li>
-                            <li>SAS VA</li>
-                            <li>Celonis</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-4 flex justify-between w-full">
-                    <div>
-                        <div class="font-bold tracking-wide">Trainer Power BI</div>
-                        <div class="text-sm">Rabobank</div>
-                        <div class="text-sm italic">Jun 2019</div>
-                    </div>
-                    <div class="flex justify-between pb-2">
-                        <ul class="skills">
-                            <li>Power BI</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-4 flex justify-between w-full">
-                    <div>
-                        <div class="font-bold tracking-wide">Freelance Website Developer</div>
-                        <div class="text-sm">Tijdvooreenweb.site</div>
-                        <div class="text-sm italic">Jan 2018 - heden</div>
-                    </div>
-                    <div class="flex justify-between pb-2">
-                        <ul class="skills">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-4 flex justify-between w-full">
-                    <div>
-                        <div class="font-bold tracking-wide">Process Development Engineer</div>
-                        <div class="text-sm">Philips Handheld Diagnostics</div>
-                        <div class="text-sm italic">Sep 2016 - Aug 2017</div>
-                    </div>
-                    <div class="flex justify-between pb-2">
-                        <ul class="skills">
-                            <li>MATLAB</li>
-                            <li>PowerShell</li>
-                            <li>VBA</li>
-                        </ul>
-                    </div>
-                </div>
+                {% endfor %}
 
                 <div>
                     <div class="h-1 w-16 bg-primary-dark mt-6 mb-2"></div>
